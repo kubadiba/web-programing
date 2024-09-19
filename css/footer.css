@@ -1,0 +1,85 @@
+.footer {
+    width: 100%;
+    /* background: linear-gradient(183deg, #67C3F3 -8.57%, #5A98F2 82.96%); Градієнтний фон */
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.footer__container {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 170px;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(183deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+    /* background: 
+        url('/images/element3.svg') no-repeat left top, /* Ваше зображення */
+        /* linear-gradient(183deg, #67C3F3 -8.57%, #5A98F2 82.96%);  */
+    /* background-size: 100px 100px; Розмір зображення, підлаштуйте за необхідності */
+    /* background-position: 130px 115px;  */
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.footer__left {
+    display: flex;
+    align-items: center;
+}
+
+.footer__logo {
+    width: 41px;
+    height: 41px;
+    background-image: url('/images/logo.svg'); /* Логотип (фон-коло) */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF; /* Білий колір літери "T" */
+    font-size: 26px;
+    font-weight: 700;
+    margin-right: 12px;
+    margin-left: 50px;
+}
+
+.footer_logo_text{
+    color: #5B9BF3;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.footer__title {
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.footer__center {
+    display: flex;
+    gap: 50px; /* Відстань між посиланнями */
+}
+
+.footer_item {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 60px;
+    margin-right: 70px
+}
+
+.footer__item:hover {
+    color: #e6e6e6; /* Зміна кольору при наведенні */
+}
+
+.footer-image {
+    position: absolute;
+    bottom: 0px; /* Зображення буде внизу */
+    left: -15px; 
+    width: 100px; /* Підлаштуйте ширину зображення */
+    height: 90px; /* Автоматична висота для збереження пропорцій */
+}
+
+

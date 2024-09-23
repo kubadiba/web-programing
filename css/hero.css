@@ -1,8 +1,7 @@
 .hero__inner {
     width: 427px;
     padding-top: 191px;
-
-
+    padding-bottom: 10px;
 }
 
 .hero__title {
@@ -28,11 +27,12 @@
 
 .hero__button {
     margin-top: 48px;
-
 }
+
 p {
     margin: 0;
 }
+
 .hero {
     position: relative;
     overflow: hidden;
@@ -45,14 +45,11 @@ p {
 .hero::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
     width: 131.581px;
     height: 115px;
     background-image: url(../images/element1.svg);
     background-repeat: no-repeat;
     background-position: left bottom;
-    background-size: 131.581px 115px;
     margin-left: -5%;
     margin-top: 5%;
     opacity: 0.3;

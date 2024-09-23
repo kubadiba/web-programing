@@ -1,15 +1,13 @@
 .container {
     max-width: 100%; 
     padding: 0; 
-    /* margin: 0; */
 }
+
 .leading {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     justify-content: flex-start; 
 }
-
 
 .leading__img {
     margin-top: 210px;
@@ -52,7 +50,6 @@
 }
 
 .leading__button {
-    margin-top: 30px;
     margin-top: 39px;
     align-self: flex-start;
     border: 1.4px solid #458FF6;  

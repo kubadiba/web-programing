@@ -1,16 +1,14 @@
 .searcher {
     display: flex;
     justify-content: space-between;
-    /* Розподіл елементів по горизонталі */
     align-items: right;
-    /* Вирівнює елементи по вертикалі (якщо потрібно) */
     padding-top: 80px;
-    background-image: url('/images/byba.svg'); /* Зображення як фон */
+    background-image: url('/images/byba.svg'); 
     padding: 0;
     background-size: 850px 550px;
     background-repeat: no-repeat; 
     position: relative;
-    padding-bottom: 50px;
+    /* padding-bottom: 0; */
 }
 
 
@@ -21,7 +19,7 @@
     align-items: center;
     margin-top: 60px;
     padding: 0 95px;
-    gap: 22px; /* Відступ 34 пікселі між елементами */
+    gap: 22px; 
     background-image: url('/images/element2.svg');
     background-repeat: no-repeat; 
     background-position: 90% 43%;
@@ -29,19 +27,15 @@
 }
 
 .box {
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: left;  */
     text-align: left;
-    /* padding: 37px;  */
     border-radius: 20px;
     background: #ffffff;
     box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.40);
     width: calc(33.33% - 22px);
-    width: 290px; /* Ширина боксу */
+    width: 290px; 
     height: 354px;
     line-height: 34px;
-    margin-bottom: 20px; 
+    /* margin-bottom: 20px;  */
 }
 
 
@@ -58,8 +52,8 @@ h3 {
 }
 
 .icon {
-    margin-left: 0; /* Приберіть будь-який негативний margin */
-    margin-right: 20px; /* Додайте відступ справа (опціонально) */
+    margin-left: 0;
+    margin-right: 20px; 
     width: 91.978px;
     height: 90px;
     flex-shrink: 0;
@@ -67,7 +61,7 @@ h3 {
 
 .text-content {
     display: flex;
-    flex-direction: column; /* Щоб текст був під заголовком */
+    flex-direction: column; 
 }
 
 .searcher__button {

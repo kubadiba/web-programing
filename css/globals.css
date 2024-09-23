@@ -12,9 +12,7 @@ body {
 
 .container, .conteiner {
     max-width: 1024px;
-    /* margin: 0 auto; */
-    padding: 0 15px; /* Додаємо трохи відступу по бокам */
-    /* box-sizing: border-box; Забезпечує, щоб padding враховувався в ширині */
+    padding: 0 15px;
 }
 
 button {
@@ -53,7 +51,6 @@ li {
     background: #458FF6;
     width: 200px;
     height: 56px;
-    /* flex-shrink: 0; */
 }
 
 .searcher__button {
@@ -70,8 +67,8 @@ li {
     font-size: 18px;
     font-weight: 700;
     text-align: center;
-    border: 1.4px solid #458FF6; /* Додаємо обведення тут */
-    border-radius: 55px; /* Зберігаємо закруглені краї */
+    border: 1.4px solid #458FF6; 
+    border-radius: 55px; 
     width: 200px;
     height: 54px;
 }

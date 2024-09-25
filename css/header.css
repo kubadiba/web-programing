@@ -1,46 +1,108 @@
-.header__container {
-    display: flex;
-    align-items: center;
-}
-.header__logo {
-    width: 41px;
-    height: 41px;
-    background-image: url('/images/Ellipse7.svg');
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #FFF;
-    font-size: 26px;
-    font-weight: 700;
-    margin-right: 12px;
-}
-.header__title{
-    color: #233348;
-    font-size: 24px;
-    font-weight: 700;
-}
-
-.home-link {
-    color: var(--1f1534-hyfen, #1F1534);
-    font-size: 18px;
-    font-weight: 246px;
-}
-
 .header {
+    padding: 26px 39px 0px 39px;    
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+}
+
+
+.header__logo {
+    width: 41px;
+    height: 41px;
+    display: flex;
+    color: #FFF;
+    margin-right: 12px;
 }
 
 .header__nav ul  {
     display: flex;
+    column-gap: 40px;
 }
 
-.header__nav-item {
-    margin-right: 40px;
+li {
+    display: block;
 }
 
 ul .header__nav-item a:not(.home-link) {
     opacity: 0.5;
 }
+
+@media (max-width: 768px) {
+    .header{
+    padding: 30px 20px 0px 10px;
+    }
+    img {
+        max-width: 150px;
+        padding-left: 30px;
+    }
+
+    
+    li {
+            display: none  !important;
+    }
+
+    ul .header__nav-item a:not(.home-link) {
+        display: none;
+    }
+
+        /* Коли меню відкривається */
+        .menu-open .header__nav ul {
+            display: flex; /* Показуємо меню */
+        }
+    
+        .menu-open ul .header__nav-item a {
+            display: block; /* Показуємо всі посилання в меню */
+        }
+}
+
+/* * .header__container {
+    padding: 26px 80px 0px 80px;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+} */ 
+
+
+/* .header__nav-link {
+    letter-spacing: 0.8px;
+    font-weight: 700;
+    margin-right: 95px;
+    font-size: 16px;
+} */
+
+
+/* .header__menu {
+    display: none;
+    width: 32px;
+    cursor: pointer;
+} */
+
+/* .header__menu > img {
+    max-width: 100%;
+} */
+
+/* .header__menu-icon {
+    width: 40px;
+} */
+
+/* .header__title{
+    color: #233348;
+    font-size: 24px;
+    font-weight: 700;
+} */
+
+/* .home-link {
+    color: var(--1f1534-hyfen, #1F1534);
+    font-size: 18px;
+    font-weight: 246px;
+} */
+
+/* .header__nav-item {
+    margin-right: 40px;
+} */
+
+/* li {
+    display: block;
+} */

@@ -1,13 +1,12 @@
 .searcher {
     display: flex;
     justify-content: space-between;
-    /* Розподіл елементів по горизонталі */
     align-items: right;
-    /* Вирівнює елементи по вертикалі (якщо потрібно) */
+    /* max-width: 1600px; */
     padding-top: 80px;
-    background-image: url('/images/byba.svg'); /* Зображення як фон */
+    background-image: url('/images/byba.svg');
     padding: 0;
-    background-size: 850px 550px;
+    /* background-size: 850px 550px; */
     background-repeat: no-repeat; 
     position: relative;
     padding-bottom: 50px;
@@ -24,7 +23,7 @@
     gap: 22px; /* Відступ 34 пікселі між елементами */
     background-image: url('/images/element2.svg');
     background-repeat: no-repeat; 
-    background-position: 90% 43%;
+    background-position: right;
     justify-content: flex-start;
 }
 
@@ -79,9 +78,10 @@ h3 {
 .searcher::after {
     content: url('/images/element4.svg');
     position: absolute;
-    bottom: -37px;
+    bottom: 40px;
     right: 80px;
     width: 60px;
     height: 70px;
     background-repeat: no-repeat; 
 }
+

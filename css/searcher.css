@@ -2,11 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: right;
-    /* max-width: 1600px; */
     padding-top: 80px;
     background-image: url('/images/byba.svg');
     padding: 0;
-    /* background-size: 850px 550px; */
     background-repeat: no-repeat; 
     position: relative;
     padding-bottom: 50px;
@@ -20,7 +18,7 @@
     align-items: center;
     margin-top: 60px;
     padding: 0 95px;
-    gap: 22px; /* Відступ 34 пікселі між елементами */
+    gap: 22px; 
     background-image: url('/images/element2.svg');
     background-repeat: no-repeat; 
     background-position: right;
@@ -28,16 +26,12 @@
 }
 
 .box {
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: left;  */
     text-align: left;
-    /* padding: 37px;  */
     border-radius: 20px;
     background: #ffffff;
     box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.40);
     width: calc(33.33% - 22px);
-    width: 290px; /* Ширина боксу */
+    width: 290px;
     height: 354px;
     line-height: 34px;
     margin-bottom: 20px; 
@@ -57,12 +51,20 @@ h3 {
 }
 
 .icon {
-    margin-left: 0; /* Приберіть будь-який негативний margin */
-    margin-right: 20px; /* Додайте відступ справа (опціонально) */
-    width: 91.978px;
+    margin-left: 27px; 
+    margin-right: 20px; 
+    width: 100px;
     height: 90px;
     flex-shrink: 0;
+    animation: moveMagnifier 3s ease-in-out infinite;
 }
+
+@keyframes moveMagnifier {
+    0% { transform: translateX(-15px); }
+    50% { transform: translateX(15px); }
+    100% { transform: translateX(-15px); }
+}
+
 
 .text-content {
     display: flex;
@@ -83,5 +85,20 @@ h3 {
     width: 60px;
     height: 70px;
     background-repeat: no-repeat; 
+}
+
+@media (max-width: 800px) {
+    .searcher {
+        justify-content: center;
+    }
+
+    .searcher::after{
+        content: none;
+    }
+
+    .boxes {
+        padding: 0;
+    }
+
 }
 
